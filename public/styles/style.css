@@ -1543,7 +1543,7 @@ a {
     width: 62px;
     cursor: pointer;
     border: none;
-    position: absolute;
+    position: relative;
     top: 6px;
     left: 6px;
 }
@@ -1579,33 +1579,33 @@ a {
 } */
 
 .lb1 {
-    background: url(../images/lb-my-accounts.png) 1px 0px;
-    /* background-image: image-set(url(../images/lb-my-accounts.png) 1x, url(../images/lb-my-accounts.png) 2x); */
+    background: url(../images/lb-accounts-64.png);
+    background-image: image-set(url(../images/lb-accounts-64.png) 1x, url(../images/lb-accounts-128.png) 2x);
 }
 
 .lb2 {
-    background: url(../images/lb-my-devices.png) 0px 0px;
-    background-image: image-set(url(../images/lb-my-devices.png) 1x, url(../images/lb-my-devices.png) 2x);
+    background: url(../images/lb-devices-64.png);
+    background-image: image-set(url(../images/lb-devices-64.png) 1x, url(../images/lb-devices-128.png) 2x);
 }
 
 .lb3 {
-    background: url(../images/leftbar-64.png) -130px -2px;
-    background-image: image-set(url(../images/leftbar-64.png) 1x, url(../images/leftbar-128.png) 2x);
+    background: url(../images/lb-events-64.png);
+    background-image: image-set(url(../images/lb-events-64.png) 1x, url(../images/lb-events-128.png) 2x);
 }
 
 .lb4 {
-    background: url(../images/leftbar-64.png) -194px -2px;
-    background-image: image-set(url(../images/leftbar-64.png) 1x, url(../images/leftbar-128.png) 2x);
+    background: url(../images/lb-files-64.png);
+    background-image: image-set(url(../images/lb-files-64.png) 1x, url(../images/lb-files-128.png) 2x);
 }
 
 .lb5 {
-    background: url(../images/leftbar-64.png) -257px -2px;
-    background-image: image-set(url(../images/leftbar-64.png) 1x, url(../images/leftbar-128.png) 2x);
+    background: url(../images/lb-users-64.png);
+    background-image: image-set(url(../images/lb-users-64.png) 1x, url(../images/lb-users-128.png) 2x);
 }
 
 .lb6 {
-    background: url(../images/leftbar-64.png) -318px -2px;
-    background-image: image-set(url(../images/leftbar-64.png) 1x, url(../images/leftbar-128.png) 2x);
+    background: url(../images/lb-server-64.png);
+    background-image: image-set(url(../images/lb-server-64.png) 1x, url(../images/lb-server-128.png) 2x);
 }
 
 .m0 {
