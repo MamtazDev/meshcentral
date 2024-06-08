@@ -60,21 +60,32 @@
             <td id="logincell">
                 {{{titlehtml}}}
                 <img id="loginPicture" />
-                <div style="font-size:46px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;padding-bottom:10px;color:#c8c8c8;text-shadow: 2px 2px 2px #000;">{{{title1}}}<sup style="font-size:20px"> {{{title2}}}</sup></div>
-                <div id=loginpanel style="display:none;box-shadow:1px 1px 4px #000">
+                <div 
+                    style="font-size:46px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;padding-bottom:10px;color:#c8c8c8;text-shadow: 2px 2px 2px #000;"
+                >
+                    {{{title1}}}
+                    <sup style="font-size:20px"> 
+                        {{{title2}}}
+                    </sup>
+                </div>
+                <div id=loginpanel style="display:none;">
                     <form id=loginpanelform method=post>
                         <input type=hidden name=action value=login />
                         <div id=message1></div>
+                        <div class="logintxt">Login</div>
+                        <p class="logintxt1">The requested resource requires more permission than provided by your existing authentication. Please login to continue.</p>
                         <div id="loginuserpassdiv" style="display:none">
                             <table style="width:100%">
                                 <tr>
                                     <td>
-                                        <input id=username title="Username" style="box-sizing:border-box;width:280px;border:0;border-radius:4px;padding:8px;background-color:#FFF8CC" {{{autocomplete}}}="username" placeholder="Username" type=text maxlength=64 name=username onchange=validateLogin(1) onkeyup=validateLogin(1,event) />
+                                        <label class="inputLabel" for="username">User Name</label>
+                                        <input id=username title="Username" class="logininput" {{{autocomplete}}}="username" placeholder="Username" type=text maxlength=64 name=username onchange=validateLogin(1) onkeyup=validateLogin(1,event) />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input id=password title="Password" style="box-sizing:border-box;width:280px;border:0;border-radius:4px;padding:8px;background-color:#FFF8CC" {{{autocomplete}}}="current-password" placeholder="Password" type=password maxlength=256 name=password onchange=validateLogin(2) onkeyup=validateLogin(2,event) />
+                                        <label class="inputLabel" for="password">Password</label>
+                                        <input id="password" title="Password" class="logininput" {{{autocomplete}}}="current-password" placeholder="Password" type=password maxlength=256 name=password onchange=validateLogin(2) onkeyup=validateLogin(2,event) />
                                     </td>
                                 </tr>
                                 <tr>
@@ -84,7 +95,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input id=loginButton style="box-sizing:border-box;width:280px;border:0;border-radius:4px;padding:6px" onclick="submitButtonClicked('loginpanelform')" type=button value="Log In" disabled="disabled" />
+                                        <input id=loginButton class="loginbtn" onclick="submitButtonClicked('loginpanelform')" type=button value="Log In" disabled="disabled" />
                                     </td>
                                 </tr>
                                 <tr id="topLanguageSelectRow" style="display:none"><td id="topLanguageSelect"></td></tr>
