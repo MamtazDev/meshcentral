@@ -482,7 +482,11 @@ body {
 }
 .inputLabel{
     display: flex;
-    color: #868686;
+    color: #868686 !important;
+}
+
+.createTable{
+    width: 100%;
 }
 
 .logininput {
