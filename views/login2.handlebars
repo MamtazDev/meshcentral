@@ -15,9 +15,13 @@
     <script keeplink=1 type="text/javascript" src="scripts/u2f-api{{min}}.js"></script>
     <title>{{{title}}} - Login</title>
     <style>
-        #body {
+        {{!-- #body {
             background-color: cadetblue;
             background: linear-gradient(to bottom right, #369, #036);
+        } --}}
+        #body {
+            background-color: whitesmoke;
+            {{!-- background: linear-gradient(to bottom right, #369, #036); --}}
         }
 
         #flink a:link {
@@ -60,13 +64,16 @@
             <td id="logincell">
                 {{{titlehtml}}}
                 <img id="loginPicture" />
-                <div 
+                {{!-- <div 
                     style="font-size:46px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;padding-bottom:10px;color:#c8c8c8;text-shadow: 2px 2px 2px #000;"
                 >
                     {{{title1}}}
                     <sup style="font-size:20px"> 
                         {{{title2}}}
                     </sup>
+                </div> --}}
+                <div class="loginLogo">
+                    <img src="images/logo-black.png" alt={{{title1}}}>
                 </div>
                 {{!-- login panel --}}
                 <div id=loginpanel style="display:none;">

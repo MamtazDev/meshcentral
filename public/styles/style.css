@@ -3384,3 +3384,14 @@ a {
     height: 100%;
     display: block; 
 }
+
+.loginLogo {
+    height: 70px;  
+    margin-bottom: 20px;
+}
+
+.loginLogo img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto; 
+}
