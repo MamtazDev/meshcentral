@@ -3370,3 +3370,17 @@ a {
     background-color: #AAA;
     font-weight: bold;
 }
+
+.logo {
+    float: left;
+    height: 66px;
+	margin:-10px;
+    padding: 10px 10px;
+    color: #c8c8c8;
+    padding-left: 15px;
+}
+
+.logo img {
+    height: 100%;
+    display: block; 
+}
